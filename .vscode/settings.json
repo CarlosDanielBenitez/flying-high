@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#531A18",
+        "titleBar.activeBackground": "#742522",
+        "titleBar.activeForeground": "#FEFBFB"
+    },
+    "svn.ignoreMissingSvnWarning": true
+}
