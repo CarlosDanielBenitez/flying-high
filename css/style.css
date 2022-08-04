@@ -113,6 +113,8 @@ height: 45px;
 
 }
 
+
+
 /* PILOTOS / AVIONES.HTML*/
 .perfil--pilotos{
     padding-top: 100px;
@@ -251,6 +253,7 @@ padding-top: 80px;
 
 }
 
+
 /*SERVICIOS / barman*/
 .repostera{
     width: 300px;
@@ -338,13 +341,14 @@ header {
         justify-content: center;
     }
     
+    
     header nav  ul {
         
         align-items: center;
         background-image: linear-gradient( to bottom, rgb(235, 235, 235), rgba(127, 121, 255, 0.775));
         
     }
-    
+
     .title {
         background-size: cover;
         background-attachment: local;
