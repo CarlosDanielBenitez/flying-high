@@ -50,19 +50,14 @@ text-shadow: 0px 0px 14px rgb(125, 125, 125);
 header nav ul li a:hover{
     background-color: aqua;
 }
-.icon{
-    width: 40px;
-    height: 40px;
-
-}
 
 
 
 .title{
-background: url(../img/avion-eeuu.jpg);
-background-position: center;
-background-size: cover;
-background-attachment:fixed;
+    background: url(../img/avion-eeuu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
     font-size: 150px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -76,6 +71,11 @@ background-attachment:fixed;
 }
 
 
+.icon{
+    width: 40px;
+    height: 40px;
+
+}
 
 .inicio--locaciones {
     display: flex;
@@ -317,7 +317,7 @@ padding-top: 80px;
 }
 .redes-contactos{
     width: 100px;
-    width: 100px;
+
 }
 
 
@@ -398,12 +398,14 @@ input:focus{
         color: aliceblue;
         justify-content: center;
     }
-    
-  
-    header nav  ul {
-        
+
+    header nav  ul {       
+        height: fit-content;
         align-items: center;
- 
+
+    }
+    header nav  ul li{
+        width: 100%;
     }
 
     .title {
