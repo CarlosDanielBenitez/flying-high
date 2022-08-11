@@ -1,136 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/backup.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/backup.css" />
+  </head>
 
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><img class="icon" src="./img/casa.png" alt=""
+            /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactos.html">contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/aviones.html">Pilotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="title">Volando Alto</div>
+      </section>
 
-</head>
+      <div class="destinos">
+        <p>Te ayudamos a elegir tu destino</p>
+        <p>
+          Haciendo click en la imagen, te permitirá conocer un poco mas sobre el
+          pais donde quieres viajar. No duden en comunicarse con nosotros, al
+          final de nuestra pagina encontrarás todas nuestras redes sociales
+        </p>
+      </div>
+      <section class="inicio--locaciones">
+        <div>
+          <a href="https://youtu.be/TZOvNKo_cdo"
+            ><img src="./img/bandera-eeuu.jpg" alt="eeuu"
+          /></a>
+        </div>
 
-<body>
-        <header>
-                <nav class="navbar navbar-expand-lg bg-light">
-                        <div class="container-fluid">
-                          <a class="navbar-brand" href="./index.html">Inicio</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><img class="icon" src="./img/bandera--espana.jpg" alt=""></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="./pages/contactos.html">contactos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="./pages/aviones.html">Pilotos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-             
-        </header>   
-        <main>
-                
-                <section>
-                        <div class="title">Volando Alto</div> 
-                </section>
-                
-                
-                <section class="inicio--locaciones">
-                        <div>
-                                <a href="https://www.google.com/search?q=estados+unidos+paisajes&sxsrf=ALiCzsaK1pOjC3sP0ls1YCPjStbjn1yRzw:1657725215020&source=lnms&tbm=isch&sa=X&ved=2ahUKEwji-c3Uk_b4AhUugpUCHVqaD0MQ_AUoAXoECAEQAw&biw=996&bih=648&dpr=2"><img src="./img/bandera-eeuu.jpg" alt="eeuu"></a>
-                        </div>
-                        
-                        <div>
-                                <a href="https://www.google.com/search?q=los+mejores+lugares+de+francia&tbm=isch&ved=2ahUKEwjPmrrnk_b4AhXKNLkGHdz8DIUQ2-cCegQIABAA&oq=los+mejores++francia&gs_lcp=CgNpbWcQARgAMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAcyBggAEB4QBzIGCAAQHhAHMgYIABAeEAc6BAgjECc6BQgAEIAEOgYIABAeEAg6BwgAELEDEEM6BAgAEENQuwVYuiZgtTNoAHAAeAGAAeoBiAHLFZIBBzE2LjEwLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=RuHOYs_fIMrp5OUP3PmzqAg&bih=648&biw=996"><img src="./img/bandera--francia.jpg" alt="francia"></a>
-                        </div>
-                        
-                        <div>
-                                <a href="https://www.google.com/search?q=los+mejores+lugares+de+espa%C3%B1a&tbm=isch&ved=2ahUKEwikuLLsk_b4AhVmNLkGHVnrDzcQ2-cCegQIABAA&oq=los+mejores+lugares+de+espa%C3%B1a&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBggAEB4QCDIGCAAQHhAIMgQIABAYMgQIABAYMgQIABAYMgQIABAYOgQIIxAnUPUkWPI3YMA7aABwAHgAgAF4iAGYCpIBBDEzLjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=UOHOYqTQNubo5OUP2da_uAM&bih=648&biw=996"><img src="./img/bandera--espana.jpg" alt="espana"></a></div>
-                                
-                                <div>
-                                        <a href="https://www.google.com/search?q=los+mejores+lugares+de+suiza&tbm=isch&ved=2ahUKEwjvhYv5k_b4AhViNbkGHYyQD_cQ2-cCegQIABAA&oq=los+mejores+lugares+de+suiza&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgQIABAYOgQIIxAnOgYIABAeEAhQ3wRYlxhgnhxoAHAAeACAAXGIAbMIkgEEMTAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=a-HOYq-kH-Lq5OUPjKG-uA8&bih=648&biw=996"><img src="./img/bandera--suiza.jpg" alt="suiza"></a>
-                                </div>
-                        </section>
-                        
-                </main>
-                <footer>
+        <div>
+          <a href="https://youtu.be/DVMeK5IK6Bs"
+            ><img src="./img/bandera--francia.jpg" alt="francia"
+          /></a>
+        </div>
 
+        <div>
+          <a href="https://youtu.be/le2Kpc-pnlM"
+            ><img src="./img/bandera--espana.jpg" alt="espana"
+          /></a>
+        </div>
 
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-                                <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="./img/champagne.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>champagne</h5>
-                                      <p>Contiene alcoholica, beber con moderacion</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="./img/champagne.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>champagne</h5>
-                                      <p>Contiene alcohol, beber con moderacion</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="./img/cafe.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Cafe</h5>
-                                      <p>Contiene cafeina, beber con moderacion</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                
+        <div>
+          <a href="https://youtu.be/vpbXcSlPeR8"
+            ><img src="./img/bandera--suiza.jpg" alt="suiza"
+          /></a>
+        </div>
+      </section>
 
-                        <div class="redes--sociales">      
-                                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt=""></a>
-                                
-                                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/tw.png" alt=""></a>
-                                
-                                <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt=""></a>
-                                
-                                <a href="https://api.whatsapp.com/send?phone=1127390494" target="_blank"><img  src="./img/whatsapp.png" alt=""></a>        
-                        </div>
-                </footer>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        </body>
-        </html>
-        
-        
-        
-        
-        
-        
-        
+      <div class="hoteles">
+        <p>Aqui te ayudamos a elegir tu hotel</p>
+        <div>
+          <a href="https://youtu.be/XPu3GvUwUR0">Hoteles en Estados Unidos </a>
+        </div>
+        <div>
+          <a href="https://youtu.be/FNdokPhQDMQ">Hoteles en Francia</a>
+        </div>
+        <div>
+          <a href="https://youtu.be/1Pld9kuBGz4">Hoteles en España</a>
+        </div>
+        <div>
+          <a href="https://youtu.be/pv8b4LYaM_0">Hoteles en Suiza</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Algunas de nuestras bebidas de regalo para nuestros pasajeros</p>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/champagne.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>champagne</h5>
+              <p>Contiene alcoholica, beber con moderacion</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/champagne.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>champagne</h5>
+              <p>Contiene alcohol, beber con moderacion</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/cafe.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cafe</h5>
+              <p>Contiene cafeina, beber con moderacion</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
+      <div class="redes--sociales">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./img/instagram.png" alt=""
+        /></a>
 
+        <a href="https://twitter.com/?lang=es" target="_blank"
+          ><img src="./img/tw.png" alt=""
+        /></a>
 
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./img/facebook.png" alt=""
+        /></a>
 
-
-
-
+        <a href="https://api.whatsapp.com/send?phone=1127390494" target="_blank"
+          ><img src="./img/whatsapp.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

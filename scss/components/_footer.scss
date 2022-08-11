@@ -1,0 +1,18 @@
+/*FOOTER/inicio*/
+.redes--sociales {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: right;
+
+    a {
+        img {
+            width: 45px;
+            height: 45px;
+            transition: transform 1s all;
+            &:hover{
+                transform: translateY(-10px) ;
+            
+            }
+        }
+    }
+}

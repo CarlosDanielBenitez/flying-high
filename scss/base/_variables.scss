@@ -1,9 +1,9 @@
-/* COLORES*/
+//  COLORES
 $color-principal: rgb(11, 62, 231);
 $color-secundario:rgb(255, 255, 255);
 
 
-/*MEDIDAS*/
+// MEDIDAS
 $w-25:25px;
 $w-40:40px;
 $w-45:45px;
@@ -13,8 +13,20 @@ $w-300:300px;
 $w-total:100%;
 
 
-/*BACKGROUND*/
+//BACKGROUND
 $no:no-repeat;
+$c:center;
+$a:absolute;
+$r:relative;
+$f:fixed;
+
+//SHADOW
+$sombra-1:3px 0px 8px rgb(214, 214, 224);
+$sombra-2:0px 0px 14px rgb(125, 125, 125);
+$sombra-3: 3px 8px 5px rgba(92, 92, 92, 0.96);
+$sombra-4:3px 0px 10px slateblue;
+$sombra-5:3px 3px rgb(120, 120, 120) ;
+$sombra-6:3px 0px 10px rgb(43, 255, 0);
 
 
 
@@ -30,11 +42,3 @@ $no:no-repeat;
 
 
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/

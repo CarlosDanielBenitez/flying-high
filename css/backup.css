@@ -65,6 +65,7 @@ header nav ul li a:hover{
     font-weight: 300;
     padding-top: 120px;
     transition: 2s;
+
 }
 .title:hover{
     transform: scale(1.05);
@@ -102,7 +103,7 @@ header nav ul li a:hover{
     transform: translateY(15px);
 }
 
-
+/* footer */
 .redes--sociales{
 flex-wrap: wrap-reverse;
 display: flex;
@@ -195,6 +196,7 @@ padding-top: 80px;
     position: absolute;
     bottom: 0%;
     right: 0%;
+
 }
 
 /* SERVICIOS */
@@ -408,17 +410,6 @@ input:focus{
         width: 100%;
     }
 
-    .title {
-        background-size: cover;
-        background-attachment: local;
-        background-position: center;
-        background-repeat: no-repeat;
-        font-size: 50px;
-        color: aliceblue;
-        justify-content: center;
-        
-        
-    }
     .inicio--locaciones div {
         
         justify-content: center;
@@ -432,13 +423,13 @@ input:focus{
     box-shadow: 3px 0px 10px rgb(43, 255, 0);
     margin: 11px;
 }
+.redes--sociales  {
+    justify-content: center;
+}
 
 .redes--sociales a img{
     width: 25px;
     height: 25px;
-}
-.redes--sociales  {
-    justify-content: center;
 }
 
 
