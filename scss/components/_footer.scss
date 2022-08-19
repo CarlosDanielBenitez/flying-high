@@ -6,8 +6,8 @@
 
     a {
         img {
-            width: 45px;
-            height: 45px;
+            width: $m45;
+            height: $m45;
             transition: transform 1s all;
             &:hover{
                 transform: translateY(-10px) ;

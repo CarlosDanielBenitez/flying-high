@@ -220,22 +220,31 @@ padding-top: 80px;
     height: 100%;
 }
 .container-chef{
-    width: 100%;
+    width: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
   margin-top: 10px;
 
 }
 
 .container-chef div img{
-    width: 100%;
-    height: 100%;
+   
     object-fit: cover;
 
 }
-.items-chef-1{
+.i
+.items-chef{
+    object-fit: contain;
+}
+.tems-chef-1{
+    width: 100px;
     grid-row: span 2;
+    grid-column: span 2;
+}
+.items-chef-2{
+
+    grid-row: span 1;
 }
 .items-chef-3{
     grid-column: span 2;
@@ -243,22 +252,12 @@ padding-top: 80px;
 .items-chef-4{
     grid-row: span 2;
 }
-.items-chef-2{
-    grid-column: span 2;
-}
 .items-chef-5{
     grid-column: span 2;
     grid-row: span 2;
 
 }
-.items-chef-6{
-    grid-column: span 3;
 
-}
-.items-chef-8{
-    grid-column: span 2;
-
-}
 
 
 /*SERVICIOS / barman*/

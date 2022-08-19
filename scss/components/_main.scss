@@ -1,14 +1,17 @@
 /*MAIN/inicio*/
+@import "../base/maps";
+@import "../base/variables";
+
 .title {
     background: url(../img/avion-eeuu.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 150px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 3px 8px 5px rgba(92, 92, 92, 0.96);
-    font-weight: 300;
+    background-position: $c;
+    background-size: $cr;
+    background-attachment: $f;
+    font-size: $m300 / 2;
+    color: $c-secundario;
+    text-align: $c;
+    text-shadow: 3px 8px 5px $c-principal;
+    font-weight: nth($fw, 8);
     padding-top: 120px;
     transition: 2s;
 
@@ -18,35 +21,57 @@
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: $m40;
+    height: $m40;
 }
 
 .inicio--locaciones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 50px;
-    
+    justify-content: $c;
+    padding-top: $m45;
+
     div {
         a {
             img {
-                width: 300px;
-                height: 300px;
-                border-radius: 20px;
-                box-shadow: 3px 0px 10px slateblue;
+                width: $m300;
+                height: $m300;
+                border-radius: $m25;
+                box-shadow: 3px 0px 10px $c-principal;
                 margin: 11px;
-                
+
                 transition: transform 3s inherit;
-                
+
                 &:hover {
                     transform: translateY(15px);
                 }
             }
         }
     }
-    
+
+}
+
+.destinos p {
+    font-size: $m40;
+    color: map-get($c-texto, color-texto);
+    font-weight: nth($fw, 5);
+    text-shadow: $sh4;
+    text-align: start;
+    text-decoration: underline;
+
+
+}
+
+.hoteles p{
+    font-size: $m40;
+    color:map-get($c-texto, color-texto);
+    font-weight: nth($fw, 5);
+    text-shadow: $sh6;
+    text-align: $c;
+    text-transform: uppercase;
+
+
 }
 
 
@@ -55,16 +80,16 @@
 
 /* MAIN / pilotos-aviones*/
 .perfil--pilotos {
-    padding-top: 100px;
+    padding-top: $m100;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: $rt (2, 2fr);
     grid-auto-rows: auto;
-    gap: 20px;
-    
+    gap: $m25;
+
     div {
         img {
-            width: 300px;
-            height: 300px;
+            width: $m300;
+            height: $m300;
 
         }
     }
@@ -74,16 +99,16 @@
 .nosotros-container {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: $rt (3, 1fr);
     grid-auto-rows: 200px;
     gap: 3px;
     padding-top: 80px;
 
     div {
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: $mt;
+            height: $mt;
+            object-fit: $cr;
         }
     }
 }
@@ -119,144 +144,167 @@
 }
 
 .nosotros-item {
-    position: relative;
+    position: $r;
 
     h3 {
-        position: absolute;
-        bottom: 0%;
-        right: 0%;
+        position: $a;
+        bottom: 0;
+        right: 0;
     }
 }
 
-/* MAIN/ servicios / chef*/
-.chef{
-    width: 300px;
-    height: 300px;
+// MAIN-servicios-chef
+.chef {
+    width: 500px;
+    height: 600px;
     display: flex;
     position: relative;
     justify-content: center;
-    margin: 25px auto 50px auto;
-    p{
-        background-color: aliceblue;
+    margin: 25px auto 80px auto;
+    padding: 30px;
+
+
+    p {
+        background-color: nth($color, 2 );
         border-radius: 7px;
-        position: absolute;
-        font-size: 25px;
+        position: $a;
+        font-size: $m25;
     }
-    img{
-        width: 100%;
-    height: 100%;
+
+    img {
+        width: $mt;
+        height: $mt;
     }
 }
 
-.container-chef{
-    width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
-  margin-top: 10px;
-            div{
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+.container-chef {
+    width: $mt;
+    display: grid;
+    grid-template-columns: $rt (3, 1fr);
+    grid-auto-rows: 400px;
+    margin-top: 10px;
+
+    div {
+        img {
+            width: $mt;
+            height: $mt;
+            object-fit: $cr;
+        }
+    }
 }
 
-.items-chef-1{
+.items-chef-1 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.items-chef-2 {
+    grid-column: span 2;
     grid-row: span 2;
 }
-.items-chef-3{
-    grid-column: span 2;
+
+.items-chef-3 {
+    grid-column: span 1;
+    grid-row: span 1;
 }
-.items-chef-4{
+
+.items-chef-4 {
+    grid-row: span 3;
+}
+
+
+.items-chef-5 {
+    grid-column: span 1;
     grid-row: span 2;
-}
-.items-chef-2{
-    grid-column: span 2;
-}
-.items-chef-5{
-    grid-column: span 2;
-    grid-row: span 2;
-
-}
-.items-chef-6{
-    grid-column: span 3;
-
-}
-.items-chef-8{
-    grid-column: span 2;
 
 }
 
 
 
-/*MAIN / servicios / repostera*/
-.repostera{
-    width: 300px;
-    height: 400px;
+
+
+// MAIN-servicios-repostera
+
+// presentacion-cocineros-asesores-aviones-pilotos!!!
+.presentacion{
+    font-size: nth($fs, 3);
+    text-align: $c;
+    padding: 8% 2%;
+    color: nth($color, 4);
+    font-weight: nth($fw, 4 );
+}
+
+
+.repostera {
+    width: 500px;
+    height: 600px;
     display: flex;
-    position: relative;
-    justify-content: center;
-    margin: 25px auto 50px auto;
-    p{
-        background-color: aliceblue;
+    position: $r;
+    justify-content: $c;
+    margin: 25px auto 80px auto;
+    
+    p {
+        background-color: $c-secundario;
         border-radius: 7px;
-        position: absolute;
-        font-size: 25px;
-    
+        position: $a;
+        font-size: $m25;
+
     }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    
+
+    img {
+        width: $mt;
+        height: $mt;
+        object-fit: $cr;
+
     }
 }
 
-.container-repostera{
-    width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
-  margin-top: 10px;
-  gap: 4px;
-            div{
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+.container-repostera {
+    width: $mt;
+    display: grid;
+    grid-template-columns: $rt (3, 1fr);
+    grid-auto-rows: 400px;
+    margin-top: 10px;
+    gap: 4px;
+
+    div {
+        img {
+            width: $mt;
+            height: $mt;
+            object-fit: $cr;
+        }
+    }
 
 
 }
-.donas{
+
+.donas {
     grid-column: span 2;
-}
-.waffles{
     grid-row: span 2;
+
 }
-.cafe{
+
+.waffles {
+    grid-row: span 3;
     grid-column: span 2;
+
+}
+
+.cafe {
+    grid-column: span 2;
+    grid-row: span 2;
+
 }
 
 
 /* CONTACTOS.HTML */
-.usuario{
-    width: 250px;
-    height: 250px;
+.usuario {
+    width: $m250;
+    height: $m250;
 }
 
 
-.redes-contactos{
+.redes-contactos {
     width: 10%;
     height: 10%;
 }
-
-
-
-
-
-
-

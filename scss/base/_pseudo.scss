@@ -1,0 +1,46 @@
+// PSEUDO ELEMENTOS
+a::first-letter{
+
+    font-weight: 800;
+    
+    }
+
+ p::first-letter{
+        color: $c-principal;
+        font-weight: 800;
+        box-shadow: $sh5;
+        &::selection{
+            color: $c-secundario;
+            background-color: blueviolet;
+        
+        }
+    }
+
+// PSEUDO CLASES
+a:visited{
+    color: rgb(0, 0, 0);
+}
+p:active{
+    box-shadow: $sh1;
+}
+input:focus{
+    border-radius: 8px;
+    padding-top: 3px;
+}
+.redes--sociales a:nth-child(1){
+    box-shadow: $sh4;
+    border-radius: 7px;
+    
+}
+a:nth-child(2){
+    box-shadow: $sh1;
+    border-radius: 7px;
+}
+.redes--sociales a:nth-child(3){
+    box-shadow: $sh5;
+    border-radius: 7px;
+}
+.redes--sociales a:nth-child(4){
+    box-shadow: $sh6;
+    border-radius: 7px;
+}

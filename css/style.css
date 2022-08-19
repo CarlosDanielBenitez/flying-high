@@ -46,8 +46,8 @@ header {
   font-size: 150px;
   color: white;
   text-align: center;
-  text-shadow: 3px 8px 5px rgba(92, 92, 92, 0.96);
-  font-weight: 300;
+  text-shadow: 3px 8px 5px #0b3ee7;
+  font-weight: 800;
   padding-top: 120px;
   transition: 2s; }
   .title:hover {
@@ -62,24 +62,40 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px; }
+  padding-top: 45px; }
   .inicio--locaciones div a img {
     width: 300px;
     height: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 0px 10px slateblue;
+    border-radius: 25px;
+    box-shadow: 3px 0px 10px #0b3ee7;
     margin: 11px;
     transition: transform 3s inherit; }
     .inicio--locaciones div a img:hover {
       transform: translateY(15px); }
 
+.destinos p {
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+  text-shadow: 3px 4px 10px slateblue;
+  text-align: start;
+  text-decoration: underline; }
+
+.hoteles p {
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+  text-shadow: 3px 0px 10px #2bff00;
+  text-align: center;
+  text-transform: uppercase; }
+
 /* MAIN / pilotos-aviones*/
 .perfil--pilotos {
   padding-top: 100px;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat 2, 2fr;
   grid-auto-rows: auto;
-  gap: 20px; }
+  gap: 25px; }
   .perfil--pilotos div img {
     width: 300px;
     height: 300px; }
@@ -87,7 +103,7 @@ header {
 /* MAIN/ nosotros */
 .nosotros-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat 3, 1fr;
   grid-auto-rows: 200px;
   gap: 3px;
   padding-top: 80px; }
@@ -122,19 +138,19 @@ header {
   position: relative; }
   .nosotros-item h3 {
     position: absolute;
-    bottom: 0%;
-    right: 0%; }
+    bottom: 0;
+    right: 0; }
 
-/* MAIN/ servicios / chef*/
 .chef {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 600px;
   display: flex;
   position: relative;
   justify-content: center;
-  margin: 25px auto 50px auto; }
+  margin: 25px auto 80px auto;
+  padding: 30px; }
   .chef p {
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 7px;
     position: absolute;
     font-size: 25px; }
@@ -145,8 +161,8 @@ header {
 .container-chef {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat 3, 1fr;
+  grid-auto-rows: 400px;
   margin-top: 10px; }
   .container-chef div img {
     width: 100%;
@@ -154,37 +170,40 @@ header {
     object-fit: cover; }
 
 .items-chef-1 {
-  grid-row: span 2; }
-
-.items-chef-3 {
+  grid-row: span 2;
   grid-column: span 2; }
-
-.items-chef-4 {
-  grid-row: span 2; }
 
 .items-chef-2 {
-  grid-column: span 2; }
-
-.items-chef-5 {
   grid-column: span 2;
   grid-row: span 2; }
 
-.items-chef-6 {
-  grid-column: span 3; }
+.items-chef-3 {
+  grid-column: span 1;
+  grid-row: span 1; }
 
-.items-chef-8 {
-  grid-column: span 2; }
+.items-chef-4 {
+  grid-row: span 3; }
 
-/*MAIN / servicios / repostera*/
+.items-chef-5 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.presentacion {
+  font-size: 25px;
+  text-align: center;
+  padding: 8% 2%;
+  color: blue;
+  font-weight: 400; }
+
 .repostera {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   display: flex;
   position: relative;
   justify-content: center;
-  margin: 25px auto 50px auto; }
+  margin: 25px auto 80px auto; }
   .repostera p {
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 7px;
     position: absolute;
     font-size: 25px; }
@@ -196,8 +215,8 @@ header {
 .container-repostera {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat 3, 1fr;
+  grid-auto-rows: 400px;
   margin-top: 10px;
   gap: 4px; }
   .container-repostera div img {
@@ -206,13 +225,16 @@ header {
     object-fit: cover; }
 
 .donas {
-  grid-column: span 2; }
-
-.waffles {
+  grid-column: span 2;
   grid-row: span 2; }
 
-.cafe {
+.waffles {
+  grid-row: span 3;
   grid-column: span 2; }
+
+.cafe {
+  grid-column: span 2;
+  grid-row: span 2; }
 
 /* CONTACTOS.HTML */
 .usuario {
@@ -220,8 +242,8 @@ header {
   height: 250px; }
 
 .redes-contactos {
-  width: 30%;
-  height: 30%; }
+  width: 10%;
+  height: 10%; }
 
 /*FOOTER/inicio*/
 .redes--sociales {
@@ -253,7 +275,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     font-size: 50px;
-    color: aliceblue;
+    color: white;
     justify-content: center; }
   header nav ul {
     height: fit-content;
@@ -264,8 +286,10 @@ header {
     justify-content: center;
     align-items: center; }
     .inicio--locaciones div a img {
-      width: 25px;
-      height: 25px; }
+      width: 100px;
+      height: 100px;
+      box-shadow: 3px 0px 10px #2bff00;
+      margin: 25px; }
   .redes--sociales {
     justify-content: center; }
     .redes--sociales a img {
@@ -276,7 +300,7 @@ header {
   .nosotros-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat 1, 1fr;
     grid-auto-rows: 100px;
     gap: 1px;
     padding-top: 10px;
@@ -288,13 +312,13 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .nosotros-container .container-chef {
-      grid-template-columns: repeat(1, 1fr); }
+    .nosotros-container .items-chef-3 {
+      grid-column: span 3; }
     .nosotros-container .container-repostera {
-      grid-template-columns: repeat(1, 1fr); }
+      grid-template-columns: repeat 1, 1fr; }
     .nosotros-container .perfil--pilotos {
       padding-top: 100px;
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat 1, 1fr;
       grid-auto-rows: auto;
       gap: 5px; } }
