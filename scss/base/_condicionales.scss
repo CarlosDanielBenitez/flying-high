@@ -1,0 +1,21 @@
+//CONDICIONALES E COMPARACION
+// == IGUAL
+// != DIFERENTE
+// > MAYOR QUE
+// < MENOR QUE
+// >= MAYOR O IGUAL
+// <= MENOR O IGUAL
+
+
+/*  if (condicional){
+   se ejecuta
+ }else{
+ de ese modo se ejecuta este otro
+ } */
+ @mixin modo ($declaracion){
+    @if $declaracion == (black){
+        text-decoration: none;
+    } @else{
+        text-decoration: overline;
+    }
+ }

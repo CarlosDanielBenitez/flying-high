@@ -64,10 +64,10 @@
     }
 }
 /*!!MEDIA QUERIE!!*//* NOSOTROS */
-.nosotros-container{
-    width: $mt;
-    display: grid;
-    grid-template-columns: $rt (1,1fr);
+.nosotros-container , .container-repostera{
+
+    grid-template-columns: 500px;
+    display: block;
     grid-auto-rows: $m100 ;
     gap: 1px;
     padding-top: 10px;
@@ -79,16 +79,7 @@
         }
     }
     /*!!MEDIA QUERIE!!*//* SERVICIOS */
-.items-chef-3{
 
-    grid-column: span 3;
-}
-.container-repostera{
-    
-    grid-template-columns: $rt (1, 1fr);
-
-    
-}
 
 /*!!MEDIA QUERIE!!*//* PILOTOS,AVIONES */
 .perfil--pilotos{

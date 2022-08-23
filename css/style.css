@@ -5,6 +5,72 @@
   font-family: 'Holtwood One SC', serif;
   box-sizing: border-box; }
 
+/*  if (condicional){
+   se ejecuta
+ }else{
+ de ese modo se ejecuta este otro
+ } */
+/* PRINT */
+@media print {
+  h1 {
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  h2 {
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; } }
+
+/*!!MEDIA QUERIE!!*/
+/* INICIO */
+@media screen and (max-width: 600px) {
+  .title {
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color: white;
+    justify-content: center; }
+  header nav ul {
+    height: fit-content;
+    align-items: center; }
+    header nav ul li {
+      width: 100%; }
+  .inicio--locaciones div {
+    justify-content: center;
+    align-items: center; }
+    .inicio--locaciones div a img {
+      width: 100px;
+      height: 100px;
+      box-shadow: 3px 0px 10px #2bff00;
+      margin: 25px; }
+  .redes--sociales {
+    justify-content: center; }
+    .redes--sociales a img {
+      width: 25px;
+      height: 25px; }
+  /*!!MEDIA QUERIE!!*/
+  /* NOSOTROS */
+  .nosotros-container, .container-repostera {
+    grid-template-columns: 500px;
+    display: block;
+    grid-auto-rows: 100px;
+    gap: 1px;
+    padding-top: 10px;
+    /*!!MEDIA QUERIE!!*/
+    /* SERVICIOS */
+    /*!!MEDIA QUERIE!!*/
+    /* PILOTOS,AVIONES */ }
+    .nosotros-container div img, .container-repostera div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
+      padding-top: 100px;
+      display: grid;
+      grid-template-columns: repeat 1, 1fr;
+      grid-auto-rows: auto;
+      gap: 5px; } }
+
 header {
   z-index: 20;
   width: 100%;
@@ -38,30 +104,82 @@ header {
             background-color: aqua; }
 
 /*MAIN/inicio*/
-.title {
-  background: url(../img/avion-eeuu.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-size: 150px;
-  color: white;
-  text-align: center;
-  text-shadow: 3px 8px 5px #0b3ee7;
-  font-weight: 800;
-  padding-top: 120px;
-  transition: 2s; }
-  .title:hover {
-    transform: scale(1.05); }
+/* PRINT */
+@media print {
+  h1 {
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  h2 {
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; } }
+
+/*!!MEDIA QUERIE!!*/
+/* INICIO */
+@media screen and (max-width: 600px) {
+  .title {
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color: white;
+    justify-content: center; }
+  header nav ul {
+    height: fit-content;
+    align-items: center; }
+    header nav ul li {
+      width: 100%; }
+  .inicio--locaciones div {
+    justify-content: center;
+    align-items: center; }
+    .inicio--locaciones div a img {
+      width: 100px;
+      height: 100px;
+      box-shadow: 3px 0px 10px #2bff00;
+      margin: 25px; }
+  .redes--sociales {
+    justify-content: center; }
+    .redes--sociales a img {
+      width: 25px;
+      height: 25px; }
+  /*!!MEDIA QUERIE!!*/
+  /* NOSOTROS */
+  .nosotros-container, .container-repostera {
+    grid-template-columns: 500px;
+    display: block;
+    grid-auto-rows: 100px;
+    gap: 1px;
+    padding-top: 10px;
+    /*!!MEDIA QUERIE!!*/
+    /* SERVICIOS */
+    /*!!MEDIA QUERIE!!*/
+    /* PILOTOS,AVIONES */ }
+    .nosotros-container div img, .container-repostera div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
+      padding-top: 100px;
+      display: grid;
+      grid-template-columns: repeat 1, 1fr;
+      grid-auto-rows: auto;
+      gap: 5px; } }
+
+/*  if (condicional){
+   se ejecuta
+ }else{
+ de ese modo se ejecuta este otro
+ } */
+.title:hover {
+  transform: scale(1.05); }
 
 .icon {
   width: 40px;
   height: 40px; }
 
 .inicio--locaciones {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   padding-top: 45px; }
   .inicio--locaciones div a img {
     width: 300px;
@@ -78,8 +196,8 @@ header {
   color: black;
   font-weight: 500;
   text-shadow: 3px 4px 10px slateblue;
-  text-align: start;
-  text-decoration: underline; }
+  text-align: center;
+  text-decoration: overline; }
 
 .hoteles p {
   font-size: 40px;
@@ -89,11 +207,18 @@ header {
   text-align: center;
   text-transform: uppercase; }
 
+.hoteles div a {
+  font-size: 3em;
+  text-decoration: none;
+  padding: 3%;
+  text-shadow: 3px 4px 10px slateblue; }
+
 /* MAIN / pilotos-aviones*/
 .perfil--pilotos {
-  padding-top: 100px;
   display: grid;
-  grid-template-columns: repeat 2, 2fr;
+  justify-content: center;
+  padding-top: 100px;
+  grid-template-columns: 300px;
   grid-auto-rows: auto;
   gap: 25px; }
   .perfil--pilotos div img {
@@ -103,8 +228,9 @@ header {
 /* MAIN/ nosotros */
 .nosotros-container {
   display: grid;
-  grid-template-columns: repeat 3, 1fr;
-  grid-auto-rows: 200px;
+  justify-content: center;
+  grid-template-columns: 400px;
+  grid-auto-rows: 300px;
   gap: 3px;
   padding-top: 80px; }
   .nosotros-container div img {
@@ -113,23 +239,23 @@ header {
     object-fit: cover; }
 
 .img-2 {
-  grid-column: span 2; }
+  grid-column: span 1; }
 
 .img-3 {
-  grid-column: span 3; }
+  grid-row: span 2; }
 
 .img-5 {
-  grid-column: span 3; }
+  grid-column: span 2; }
 
 .img-7 {
-  grid-column: span 3; }
+  grid-column: span 2; }
 
 .img-4 {
   grid-row: span 2;
-  grid-column: span 3; }
+  grid-column: span 1; }
 
 .img-8 {
-  grid-column: span 2; }
+  grid-column: span 1; }
 
 .img-9 {
   grid-row: span 1; }
@@ -139,54 +265,30 @@ header {
   .nosotros-item h3 {
     position: absolute;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    background-color: #0b3ee7;
+    color: white; }
 
-.chef {
-  width: 500px;
-  height: 600px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin: 25px auto 80px auto;
-  padding: 30px; }
-  .chef p {
-    background-color: white;
-    border-radius: 7px;
-    position: absolute;
-    font-size: 25px; }
-  .chef img {
-    width: 100%;
-    height: 100%; }
+.chef p {
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  font-size: 25px; }
+
+.chef img {
+  width: 100%;
+  height: 100%; }
 
 .container-chef {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat 3, 1fr;
+  justify-content: center;
+  grid-template-columns: 280px;
   grid-auto-rows: 400px;
   margin-top: 10px; }
   .container-chef div img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-
-.items-chef-1 {
-  grid-row: span 2;
-  grid-column: span 2; }
-
-.items-chef-2 {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.items-chef-3 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.items-chef-4 {
-  grid-row: span 3; }
-
-.items-chef-5 {
-  grid-column: span 1;
-  grid-row: span 2; }
 
 .presentacion {
   font-size: 25px;
@@ -195,48 +297,54 @@ header {
   color: blue;
   font-weight: 400; }
 
-.repostera {
-  width: 500px;
-  height: 600px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin: 25px auto 80px auto; }
-  .repostera p {
-    background-color: white;
-    border-radius: 7px;
-    position: absolute;
-    font-size: 25px; }
-  .repostera img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+.repostera p {
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  font-size: 25px; }
+
+.repostera img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .container-repostera {
-  width: 100%;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat 3, 1fr;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 200px;
   margin-top: 10px;
   gap: 4px; }
-  .container-repostera div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+  .container-repostera div {
+    width: 320px; }
+    .container-repostera div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 .donas {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 2; }
 
 .waffles {
-  grid-row: span 3;
-  grid-column: span 2; }
+  grid-column: span 2;
+  grid-row: span 1; }
 
 .cafe {
   grid-column: span 2;
-  grid-row: span 2; }
+  grid-row: span 1; }
 
 /* CONTACTOS.HTML */
+.asesoras {
+  display: grid;
+  justify-content: center; }
+  .asesoras p {
+    font-size: 3em; }
+  .asesoras img {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 100%; }
+
 .usuario {
   width: 250px;
   height: 250px; }
@@ -297,10 +405,9 @@ header {
       height: 25px; }
   /*!!MEDIA QUERIE!!*/
   /* NOSOTROS */
-  .nosotros-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat 1, 1fr;
+  .nosotros-container, .container-repostera {
+    grid-template-columns: 500px;
+    display: block;
     grid-auto-rows: 100px;
     gap: 1px;
     padding-top: 10px;
@@ -308,17 +415,82 @@ header {
     /* SERVICIOS */
     /*!!MEDIA QUERIE!!*/
     /* PILOTOS,AVIONES */ }
-    .nosotros-container div img {
+    .nosotros-container div img, .container-repostera div img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .nosotros-container .items-chef-3 {
-      grid-column: span 3; }
-    .nosotros-container .container-repostera {
-      grid-template-columns: repeat 1, 1fr; }
-    .nosotros-container .perfil--pilotos {
+    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
       padding-top: 100px;
       display: grid;
       grid-template-columns: repeat 1, 1fr;
       grid-auto-rows: auto;
       gap: 5px; } }
+
+.inicio--locaciones, .hoteles div {
+  display: flex;
+  justify-content: center; }
+
+.title {
+  background: url(../img/avion-eeuu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 8px 5px #0b3ee7;
+  font-weight: 800;
+  padding-top: 120px;
+  transition: 2s; }
+
+.chef, .repostera {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 25px auto 80px auto;
+  padding: 20px; }
+
+a::first-letter {
+  font-weight: 800; }
+
+p::first-letter {
+  color: #0b3ee7;
+  font-weight: 800;
+  box-shadow: 3px 3px rgba(48, 30, 239, 0.911); }
+  p::first-letter::selection {
+    color: white;
+    background-color: blueviolet; }
+
+a:visited {
+  color: black; }
+
+p:active {
+  box-shadow: 3px 0px 8px #d6d6e0; }
+
+input:focus {
+  border-radius: 8px;
+  padding-top: 3px; }
+
+.redes--sociales a:nth-child(1) {
+  box-shadow: 3px 4px 10px slateblue;
+  border-radius: 7px; }
+
+a:nth-child(2) {
+  box-shadow: 3px 0px 8px #d6d6e0;
+  border-radius: 7px; }
+
+.redes--sociales a:nth-child(3) {
+  box-shadow: 3px 3px rgba(48, 30, 239, 0.911);
+  border-radius: 7px; }
+
+.redes--sociales a:nth-child(4) {
+  box-shadow: 3px 0px 10px #2bff00;
+  border-radius: 7px; }
+
+/*  if (condicional){
+   se ejecuta
+ }else{
+ de ese modo se ejecuta este otro
+ } */

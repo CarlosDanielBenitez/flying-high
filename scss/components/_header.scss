@@ -1,38 +1,49 @@
-header{
+@import "./base/condicionales";
+@import "./base/medias";
+@import "../base/variables";
+
+
+header {
     z-index: 20;
     width: $mt;
     display: flex;
-    nav{
-    width: $mt;
-        ul{
-           background-image: url(../img/fondo--nav.jpg);
+
+    nav {
+        width: $mt;
+
+        ul {
+            background-image: url(../img/fondo--nav.jpg);
             background-size: $cr;
             background-position: $c;
             background-repeat: $no;
             width: $mt;
             height: 50px;
             display: flex;
-            flex-wrap:wrap;
+            flex-wrap: wrap;
             align-items: flex-end;
             justify-content: space-evenly;
-            li{
+
+            li {
                 display: inline-block;
                 transition: transform 2s all;
-                &:hover{
-                 transform: translateY(3px);
+
+                &:hover {
+                    transform: translateY(3px);
                 }
-                a{
+
+                a {
                     font-size: 19px;
-                    text-decoration: none;
+                    @include modo (black);
                     background-color: $c-secundario;
-                border-radius: 5px;
-                box-shadow: $sh1;
-                text-shadow: $sh2;
-                &:hover{
-                  background-color: aqua;
-                }
+                    border-radius: 5px;
+                    box-shadow: $sh1;
+                    text-shadow: $sh2;
+
+                    &:hover {
+                        background-color: aqua;
+                    }
                 }
             }
-    }
+        }
     }
 }
