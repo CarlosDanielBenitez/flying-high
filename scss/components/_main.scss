@@ -1,9 +1,9 @@
 /*MAIN/inicio*/
 @import "../base/maps";
 @import "../base/variables";
-@import "./base/mixins";
-@import "./base/medias";
-@import "./base/condicionales";
+@import "../base/mixins";
+@import "../base/medias";
+@import "../base/condicionales";
 
 
 
@@ -90,7 +90,7 @@
 
 /* MAIN / pilotos-aviones*/
 .perfil--pilotos {
-    
+
     @include grid (grid, center);
     padding-top: $m100;
     grid-template-columns: 300px;
@@ -106,9 +106,9 @@
     }
 }
 
-/* MAIN/ nosotros */ 
+/* MAIN/ nosotros */
 .nosotros-container {
-@include grid (grid, center);
+    @include grid (grid, center);
     grid-template-columns: 400px;
     grid-auto-rows: 300px;
     gap: 3px;
@@ -242,14 +242,15 @@
 }
 
 .container-repostera {
-   @include grid (grid, center);
+    @include grid (grid, center);
     grid-template-columns: $rt (3, 1fr);
     grid-auto-rows: 200px;
     margin-top: 10px;
     gap: 4px;
-    
+
     div {
         width: 320px;
+
         img {
             width: $mt;
             height: $mt;
@@ -269,7 +270,7 @@
 .waffles {
     grid-column: span 2;
     grid-row: span 1;
-    
+
 }
 
 .cafe {
@@ -281,7 +282,7 @@
 
 /* CONTACTOS.HTML */
 .asesoras {
-@include grid (grid, center);
+    @include grid (grid, center);
 
 
 

@@ -50,7 +50,8 @@
       height: 25px; }
   /*!!MEDIA QUERIE!!*/
   /* NOSOTROS */
-  .nosotros-container, .container-repostera {
+  .nosotros-container,
+  .container-repostera {
     grid-template-columns: 500px;
     display: block;
     grid-auto-rows: 100px;
@@ -60,11 +61,13 @@
     /* SERVICIOS */
     /*!!MEDIA QUERIE!!*/
     /* PILOTOS,AVIONES */ }
-    .nosotros-container div img, .container-repostera div img {
+    .nosotros-container div img,
+    .container-repostera div img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
+    .nosotros-container .perfil--pilotos,
+    .container-repostera .perfil--pilotos {
       padding-top: 100px;
       display: grid;
       grid-template-columns: repeat 1, 1fr;
@@ -144,7 +147,8 @@ header {
       height: 25px; }
   /*!!MEDIA QUERIE!!*/
   /* NOSOTROS */
-  .nosotros-container, .container-repostera {
+  .nosotros-container,
+  .container-repostera {
     grid-template-columns: 500px;
     display: block;
     grid-auto-rows: 100px;
@@ -154,11 +158,13 @@ header {
     /* SERVICIOS */
     /*!!MEDIA QUERIE!!*/
     /* PILOTOS,AVIONES */ }
-    .nosotros-container div img, .container-repostera div img {
+    .nosotros-container div img,
+    .container-repostera div img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
+    .nosotros-container .perfil--pilotos,
+    .container-repostera .perfil--pilotos {
       padding-top: 100px;
       display: grid;
       grid-template-columns: repeat 1, 1fr;
@@ -405,7 +411,8 @@ header {
       height: 25px; }
   /*!!MEDIA QUERIE!!*/
   /* NOSOTROS */
-  .nosotros-container, .container-repostera {
+  .nosotros-container,
+  .container-repostera {
     grid-template-columns: 500px;
     display: block;
     grid-auto-rows: 100px;
@@ -415,11 +422,13 @@ header {
     /* SERVICIOS */
     /*!!MEDIA QUERIE!!*/
     /* PILOTOS,AVIONES */ }
-    .nosotros-container div img, .container-repostera div img {
+    .nosotros-container div img,
+    .container-repostera div img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .nosotros-container .perfil--pilotos, .container-repostera .perfil--pilotos {
+    .nosotros-container .perfil--pilotos,
+    .container-repostera .perfil--pilotos {
       padding-top: 100px;
       display: grid;
       grid-template-columns: repeat 1, 1fr;
