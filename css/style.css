@@ -27,7 +27,7 @@
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 50px;
+    font-size: 15px;
     color: white;
     justify-content: center; }
   header nav ul {
@@ -107,6 +107,13 @@ header {
             background-color: aqua; }
 
 /*MAIN/inicio*/
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'Holtwood One SC', serif;
+  box-sizing: border-box; }
+
 /* PRINT */
 @media print {
   h1 {
@@ -124,7 +131,7 @@ header {
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 50px;
+    font-size: 15px;
     color: white;
     justify-content: center; }
   header nav ul {
@@ -171,6 +178,69 @@ header {
       grid-auto-rows: auto;
       gap: 5px; } }
 
+.inicio--locaciones, .hoteles div {
+  display: flex;
+  justify-content: center; }
+
+.title {
+  background: url(../img/avion-eeuu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 8px 5px #0b3ee7;
+  font-weight: 800;
+  padding-top: 120px;
+  transition: 2s; }
+
+.chef, .repostera {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 25px auto 80px auto;
+  padding: 20px; }
+
+a::first-letter {
+  font-weight: 800; }
+
+p::first-letter {
+  color: #0b3ee7;
+  font-weight: 800;
+  box-shadow: 3px 3px rgba(48, 30, 239, 0.911); }
+  p::first-letter::selection {
+    color: white;
+    background-color: blueviolet; }
+
+a:visited {
+  color: black; }
+
+p:active {
+  box-shadow: 3px 0px 8px #d6d6e0; }
+
+input:focus {
+  border-radius: 8px;
+  padding-top: 3px; }
+
+.redes--sociales a:nth-child(1) {
+  box-shadow: 3px 4px 10px slateblue;
+  border-radius: 7px; }
+
+a:nth-child(2) {
+  box-shadow: 3px 0px 8px #d6d6e0;
+  border-radius: 7px; }
+
+.redes--sociales a:nth-child(3) {
+  box-shadow: 3px 3px rgba(48, 30, 239, 0.911);
+  border-radius: 7px; }
+
+.redes--sociales a:nth-child(4) {
+  box-shadow: 3px 0px 10px #2bff00;
+  border-radius: 7px; }
+
 /*  if (condicional){
    se ejecuta
  }else{
@@ -198,7 +268,7 @@ header {
       transform: translateY(15px); }
 
 .destinos p {
-  font-size: 40px;
+  font-size: 25px;
   color: black;
   font-weight: 500;
   text-shadow: 3px 4px 10px slateblue;
@@ -206,7 +276,7 @@ header {
   text-decoration: overline; }
 
 .hoteles p {
-  font-size: 40px;
+  font-size: 25px;
   color: black;
   font-weight: 500;
   text-shadow: 3px 0px 10px #2bff00;
@@ -388,7 +458,7 @@ header {
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 50px;
+    font-size: 15px;
     color: white;
     justify-content: center; }
   header nav ul {
@@ -444,7 +514,7 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-size: 150px;
+  font-size: 50px;
   color: white;
   text-align: center;
   text-shadow: 3px 8px 5px #0b3ee7;

@@ -1,8 +1,11 @@
 /*MAIN/inicio*/
-@import "../base/maps";
+@import "../base/generales";
 @import "../base/variables";
+@import "../base/maps";
 @import "../base/mixins";
 @import "../base/medias";
+@import "../base/extends";
+@import "../base/pseudo";
 @import "../base/condicionales";
 
 
@@ -49,7 +52,7 @@
 
 .destinos {
     p {
-        font-size: $m40;
+        font-size: $m25;
         color: map-get($c-texto, color-texto);
         font-weight: nth($fw, 5);
         text-shadow: $sh4;
@@ -62,7 +65,7 @@
 
 .hoteles {
     p {
-        font-size: $m40;
+        font-size: $m25;
         color: map-get($c-texto, color-texto);
         font-weight: nth($fw, 5);
         text-shadow: $sh6;
