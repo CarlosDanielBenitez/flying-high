@@ -1,59 +1,59 @@
 //  COLORES
 $c-principal: rgb(11, 62, 231);
-$c-secundario:rgb(255, 255, 255);
+$c-secundario: rgb(255, 255, 255);
 
 
 // MEDIDAS
-$m25:25px;
-$m40:40px;
-$m45:45px;
-$m100:100px;
-$m250:250px;
-$m300:300px;
-$mt:100%;
+$m25: 25px;
+$m40: 40px;
+$m45: 45px;
+$m100: 100px;
+$m250: 250px;
+$m300: 300px;
+$mt: 100%;
 
 
 //POSICIONAMIENTOS
-$no:no-repeat;
+$no: no-repeat;
 $rt: repeat;
-$c:center;
-$a:absolute;
-$r:relative;
-$f:fixed;
+$c: center;
+$a: absolute;
+$r: relative;
+$f: fixed;
 $cr: cover;
 
 //SHADOW
-$sh1:3px 0px 8px rgb(214, 214, 224);
-$sh2:0px 0px 14px rgb(125, 125, 125);
+$sh1: 3px 0px 8px rgb(214, 214, 224);
+$sh2: 0px 0px 14px rgb(125, 125, 125);
 $sh3: 3px 8px 5px rgba(92, 92, 92, 0.96);
-$sh4:3px 4px 10px slateblue;
-$sh5:3px 3px rgba(48, 30, 239, 0.911);
-$sh6:3px 0px 10px rgb(43, 255, 0);
+$sh4: 3px 4px 10px slateblue;
+$sh5: 3px 3px rgba(48, 30, 239, 0.911);
+$sh6: 3px 0px 10px rgb(43, 255, 0);
 
 
 // ESTAS SON LISTAS.SCSS:
 // font-weight
 $fw: 100,
-200,
-300,
-400,
-500,
-600,
-700,
-800;
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800;
 
 // colores
 $color: black,
-white,
-green,
-blue,
-red;
+    white,
+    green,
+    blue,
+    red;
 
 //tamaños de letras
 $fs: 10px,
-20px,
-25px,
-30px,
-40px;
+    20px,
+    25px,
+    30px,
+    40px;
 
 // operaciones (+ - / *)

@@ -246,20 +246,23 @@
 
 .container-repostera {
     @include grid (grid, center);
-    grid-template-columns: $rt (3, 1fr);
-    grid-auto-rows: 200px;
-    margin-top: 10px;
-    gap: 4px;
+    grid-template-columns: $rt (
+        3,
+        1fr
+    );
+grid-auto-rows: 200px;
+margin-top: 10px;
+gap: 4px;
 
-    div {
-        width: 320px;
+div {
+    width: 320px;
 
-        img {
-            width: $mt;
-            height: $mt;
-            object-fit: $cr;
-        }
+    img {
+        width: $mt;
+        height: $mt;
+        object-fit: $cr;
     }
+}
 
 
 }

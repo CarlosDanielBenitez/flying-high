@@ -96,11 +96,14 @@
         .perfil--pilotos {
             padding-top: $m100;
             display: grid;
-            grid-template-columns: $rt (1, 1fr);
-            grid-auto-rows: auto;
-            gap: 5px;
-        }
-
+            grid-template-columns: $rt (
+                1,
+                1fr
+            );
+        grid-auto-rows: auto;
+        gap: 5px;
     }
+
+}
 
 }
